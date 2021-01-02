@@ -1,0 +1,17 @@
+.blog-post-header{
+   
+   padding-top: 3rem;
+
+   &__post-meta{
+      margin-bottom: 2rem;
+   }
+
+   &__title{
+      padding-bottom: 0;
+   }
+
+   &__subtitle{
+      font-size: 1.6rem;
+      margin-bottom: 3rem;
+   }
+}

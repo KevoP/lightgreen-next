@@ -1,0 +1,8 @@
+.dark-theme{
+   $dark-background: #224466;
+
+   .card{
+      background-color: $dark-background;
+      border: 2px solid blanchedalmond;
+   }
+}

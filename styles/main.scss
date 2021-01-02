@@ -1,0 +1,18 @@
+/* make the customizations */
+$theme-colors: (
+    "info": tomato,
+    "danger": teal
+);
+
+// Your variable overrides
+$body-color: #111;
+
+@import "~bootstrap/scss/bootstrap";
+
+@import "./components/components";
+@import "./base/base";
+
+
+// themes
+@import "./themes/light-theme";
+@import "./themes/dark-theme";

@@ -1,0 +1,53 @@
+.theme-toggler{
+   $self: &;
+
+   background: #999;
+   border-radius: .6rem;
+   height: 1.2rem;
+   width: 2.8rem;
+   display: flex;
+   align-items: center;
+   position: relative;
+   transition: all .3s ease-in-out;
+   border: 2px solid #333;
+
+   &__indicator{
+      height: 1.4rem;
+      width: 1.4rem;
+      border-radius: 50%;
+      background-color:#333;
+      position: absolute;
+      left: -.1rem;
+      z-index: 1;
+      transition: all .3s ease-in-out;
+   }
+
+   &_dark{
+      background: #E9E9E9;
+      border-color: #AAA;
+
+      #{ $self }__indicator{
+         background-color: blanchedalmond;
+         margin-right: -.1rem;
+         margin-left: auto;
+         right: -.1rem;
+         left: unset;
+      }
+
+      #{ $self }__icon{
+         color: #112244;
+      }
+   }
+
+   &__icon{
+      position: absolute;
+      left: 3px;
+      z-index: 0;
+
+      &:last-child{
+         right: 3px;
+         left: unset;
+      }
+   }
+
+}
