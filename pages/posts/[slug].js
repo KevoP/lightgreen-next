@@ -48,7 +48,8 @@ export async function getStaticProps({params, preview, previewData}){
          blogPost,
          preview,
          previewData
-      }
+      },
+      revalidate: 1
    }
 }
 
