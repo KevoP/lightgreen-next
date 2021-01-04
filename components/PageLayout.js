@@ -1,7 +1,6 @@
 import { Container } from 'react-bootstrap'
 import BlogNavbar from './BlogNavbar'
 import Footer from './Footer'
-import Head from 'next/head';
 import { useTheme } from '../providers/ThemeProvider';
 
 export default function PageLayout({children, className}) {
@@ -10,9 +9,6 @@ export default function PageLayout({children, className}) {
 
    return (
       <div className={theme.type && `${theme.type}-theme`}>
-         <Head>
-            <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet" /> 
-         </Head>
          
          <Container>
             <BlogNavbar theme={theme} toggleTheme={toggleTheme} />

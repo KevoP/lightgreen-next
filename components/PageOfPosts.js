@@ -4,6 +4,7 @@ import { Col } from 'react-bootstrap';
 import { useGetPosts } from 'actions';
 import BlankCardItem from './BlankCardItem';
 import BlankCardListItem from './BlankCardListItem';
+import { dateToLocale } from '../lib/utils';
 
 export default function PageOfPosts({posts, listView}) {
    
@@ -26,7 +27,7 @@ export default function PageOfPosts({posts, listView}) {
             <CardListItem 
                   author={post.author}
                   img={post.coverImage}
-                  date={post.date}
+                  date={datetoLocale(post.date)}
                   title={post.title}
                   text={post.subtitle}
                   link={post.url}
@@ -39,7 +40,7 @@ export default function PageOfPosts({posts, listView}) {
          <CardItem 
                author={post.author}
                img={post.coverImage}
-               date={post.date}
+               date={dateToLocale(post.date)}
                title={post.title}
                text={post.subtitle}
                link={post.url}
